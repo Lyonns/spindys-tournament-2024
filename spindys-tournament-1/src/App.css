@@ -1,0 +1,221 @@
+.main-body{
+  text-align: center;
+  place-content: center;
+  padding-top: 50px;
+}
+.main-body > div {
+  scroll-margin-top: 80px; /* Adjust this value as needed */
+}
+
+.home-image {
+  display: block;
+  margin: 10px auto 0;
+  height: auto;
+}
+.spindys{
+  font-size: 8vw;
+  font-weight: 700;
+}
+@media (min-width: 0px) {
+  .home-image {
+    width: 75%;  /* Smaller size for mobile */
+  }
+  .spindys{
+    font-size: 12vw;
+    font-weight: 700;
+  }
+}
+@media (min-width: 768px) {
+  .home-image {
+    width: 50%;  /* Smaller size for tablets */
+  }
+  .spindys{
+    font-size: 8vw;
+    font-weight: 700;
+  }
+}
+#home h1 {
+  margin: 10px;  /* Remove default margin */
+}
+.main-body > div:not(.prizes) {
+  padding: 100px 0;  /* Adjust the padding as needed */
+}
+.title{
+  font-size:35px;
+  font-weight:650;
+}
+.content{
+  font-size: 18px;
+  font-weight: 600;
+}
+.prizes {
+  margin: auto;
+  max-width: 400px;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 600;
+
+}
+.prize-box{
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  margin: 40px auto; /* Auto margins to center the section horizontally */
+  padding: 20px; /* Add padding inside the border */
+  border: 2px solid #888f; /* Set the border color and thickness */
+  border-radius: 15px; /* Create the curved corners */
+  box-shadow: 0 4px 8px rgba(120, 120, 120, 0.4); /* Optional: Add a subtle shadow for depth */
+}
+.prizes-left{
+  text-align: left;
+  padding-left: 20px;
+}
+.prizes-right{
+  text-align: right;
+  padding-right: 20px;
+}
+
+
+/* RESULTS */
+
+.results-list {
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 650;
+}
+.results-list a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;  /* Smooth transition for hover effects */
+}
+/* Hover effect with square outline */
+.results-list a:hover {
+  background: rgb(90, 240, 140);
+  padding: 6px;  /* Space between text and border */
+  border-radius: 15px;  /* Slight rounding for a clean look */
+}
+
+
+/* SCHEDULE */
+
+/* Style for the schedule container */
+#schedule {
+  padding: 20px;
+  max-width: 600px; /* Set a max-width to keep content centered and not too wide */
+  margin: auto; /* Center the schedule section horizontally */
+
+}
+/* Grid layout for the schedule items */
+.schedule-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  gap: 10px; /* Space between items */
+}
+/* Style for each schedule item */
+.schedule-item {
+  display: contents; /* Make each item take up the full grid cell */
+}
+/* Style for the left side of the schedule item */
+.schedule-left {
+  text-align: left;
+  font-weight: 600;
+  padding: 6px;
+}
+/* Style for the right side of the schedule item */
+.schedule-right {
+  text-align: right;
+  border: 2px solid #888f; /* Set the border color and thickness */
+  border-radius: 15px; /* Create the curved corners */
+  box-shadow: 0 4px 8px rgba(120, 120, 120, 0.4); /* Optional: Add a subtle shadow for depth */
+  font-weight: 600;
+  padding: 6px;  /* Space between text and border */
+  padding-right: 15px;
+  border-radius: 15px;
+}
+
+/* PARTICIPANTS */
+
+/* Style for the participants section */
+#participants {
+  padding: 20px;
+}
+/* Style for each round section */
+.round-section {
+  margin: 40px auto; /* Auto margins to center the section horizontally */
+  padding: 20px; /* Add padding inside the border */
+  border: 2px solid #888f; /* Set the border color and thickness */
+  border-radius: 15px; /* Create the curved corners */
+  box-shadow: 0 4px 8px rgba(120, 120, 120, 0.4); /* Optional: Add a subtle shadow for depth */
+  max-width: fit-content; /* Ensure the width fits the content */
+}
+/* Style for the round grid in Round 1 */
+.round-grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 40px;
+}
+/* Style for each participant item in the grid */
+.participant-item{
+  text-align: center;
+}
+/* Style for round sides layout */
+.round-sides {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between B Side and A Side */
+}
+/* Style for each side (B and A) */
+.side {
+  width: 200px; /* Adjust width as needed */
+}
+/* Style for the list items */
+.side ul {
+  list-style: none;
+  padding: 0;
+}
+/* Style for each list item */
+.side li {
+  margin-bottom: 5px; /* Space between list items */
+}
+
+/* JUDGES */
+
+.judges-list{
+  font-size: 20px;
+  font-weight: 650;
+}
+.judges-list > div {
+  margin: 30px; /* Adjust the space between each judge entry */
+}
+@media (min-width: 768px) {
+  .title{
+    font-size: 60px;
+    font-weight: 700;
+  }
+  .judges-list{
+    font-size: 30px;
+    font-weight: 650;
+  }
+}
+
+
+.judges-list a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;  /* Smooth transition for hover effects */
+}
+
+/* Hover effect with square outline */
+.judges-list a:hover {
+  background: rgb(90, 240, 140);
+  padding: 6px;  /* Space between text and border */
+  border-radius: 15px;  /* Slight rounding for a clean look */
+}
+
+/* RULEBOOK */
+#rulebook .content{
+  padding: 20px;
+  max-width: 600px;
+  margin: auto
+}
