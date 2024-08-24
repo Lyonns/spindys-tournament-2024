@@ -1,4 +1,10 @@
+
 {
+  "name": "spindys-tournament-parent",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cd spindys-tournament-1 && npm run build"
+  },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
