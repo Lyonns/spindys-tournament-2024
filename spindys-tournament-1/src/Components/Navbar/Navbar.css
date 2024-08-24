@@ -1,0 +1,87 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;  /* Remove margin */
+    padding: 20px 80px;  /* Adjust padding as needed */
+    width: 100%;  /* Ensure it spans the entire width */
+    box-sizing: border-box;  /* Includes padding in width */
+    color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;  /* Ensures the navbar stays above other content */
+    background-color: white; 
+}
+body.dark-mode .nav{
+    color: white;
+    background-color: rgb(24, 31, 34);
+}
+body{
+    background-color: white;
+    color: black;
+}
+body.dark-mode{
+    background-color:rgb(24, 31, 34);
+    color:white
+}
+/* Remove default link styling */
+.nav-menu a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;  /* Smooth transition for hover effects */
+}
+  
+  /* Hover effect with square outline */
+.nav-menu a:hover {
+    background: rgb(90, 240, 140);
+    padding: 6px;  /* Space between text and border */
+    border-radius: 15px;  /* Slight rounding for a clean look */
+}
+.nav-logo{
+    font-size: 42px;
+    font-weight: 700;
+}
+@media (max-width: 768px) {
+    .nav-logo{
+        font-size: 36px;
+        font-weight: 650;
+    }
+    .nav{
+        margin: 0;
+        padding: 15px;
+    }
+}
+.nav-logo a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+  
+.nav-logo a:hover {
+    color: rgb(90, 240, 140);
+}
+  
+.moonSun{
+    color:rgb(90, 240, 140);
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 600;
+    gap: 50px;
+}
+  
+@media (max-width: 1080px) {
+    .nav-menu li:not(.nav-contact) {
+        display: none;
+    }
+}
+.nav-contact{
+    font-size: 26px;
+}
+html {
+    scroll-behavior: smooth;
+}
